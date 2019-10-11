@@ -14,19 +14,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common EvolutionX stuff.
-CUSTOM_BUILD_TYPE := OFFICIAL
-EVO_MAINTAINER := Mir Yasin Ali
-EVO_SUPPORT_URL := https://t.me/EvolutionXViolet
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
 IS_PHONE:= true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_violet
+PRODUCT_NAME := revengeos_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro

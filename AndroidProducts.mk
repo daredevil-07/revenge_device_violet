@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_violet.mk
+    $(LOCAL_DIR)/revengeos_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_violet-userdebug \
-    aosp_violet-eng \
-    aosp_violet-user
+    revengeos_violet-userdebug \
+    revengeos_violet-eng \
+    revengeos_violet-user
